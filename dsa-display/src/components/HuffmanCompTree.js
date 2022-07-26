@@ -33,7 +33,7 @@ const HuffmanCompTree = () => {
 
     const onButtonClick = () => {
         if (inputString.length < 2) {
-            <dialog>Strings of a length less than two can't be Huffman Encoded</dialog>
+            alert("Strings of a length less than two can't be Huffman Encoded")
             return;
         }
         console.log("making Huffman tree for the string \"" + inputString + "\".");
@@ -44,7 +44,7 @@ const HuffmanCompTree = () => {
         // make sure there is more than one kind of symbol
         const numberOfDistinctLetters = vals.length;
         if (numberOfDistinctLetters < 2) {
-            <dialog>There need to be at least two different symbols!</dialog>
+            alert("There need to be at least two different symbols!")
             return;
         }
         // calculate logarithmic measure of the rate of transfer of information 
